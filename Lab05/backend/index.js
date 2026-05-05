@@ -7,7 +7,7 @@ import ReviewsDAO from "./dao/reviewsDAO.js";
 async function main(){
     dotenv.config();
 
-    const client = new mongodb.MongoClient(process.env.MOVIEREVIEWS_DB_URI);
+    const client = new mongodb.MongoClient(process.env.MONGO_URL);
 
     const port = process.env.PORT || 3000;
 
